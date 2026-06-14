@@ -1,15 +1,16 @@
 {
   "version": 2,
+  "outputDirectory": "backend/dist",
   "builds": [
     {
-      "src": "backend/api/index.js",
+      "src": "backend/dist/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/backend/api/index.js"
+      "dest": "/backend/dist/index.js"
     }
   ]
 }
