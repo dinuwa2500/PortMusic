@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "vercel-build": "npm run build",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -14,7 +15,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^8.3.1"
+    "mongoose": "^8.3.1",
+    "serverless-http": "^4.0.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
